@@ -29,7 +29,7 @@ public class Retangulo {
     public void CalcularPerimetro() {
         perimetro = 2 * (lado1 + lado2);
         {
-            System.out.println("O perimetro do retângulo \"" + nome + "\" é " + perimetro);
+            System.out.println("O Perímetro do retângulo \"" + nome + "\" é " + perimetro);
         }
     }
 

@@ -1,5 +1,6 @@
 package br.com.fecaf;
 
+import br.com.fecaf.model.Circulo;
 import br.com.fecaf.model.Retangulo;
 
 public class Geometria {
@@ -25,7 +26,7 @@ public class Geometria {
         ObjRetangulo2.nome = "Retangulo2";
 
         ObjRetangulo2.lado1 = 20;
-        ObjRetangulo2.lado2 = 20Exercício de POO com classe Retângulo;
+        ObjRetangulo2.lado2 = 20;
 
         ObjRetangulo2.exibirNaTela();
         ObjRetangulo2.CalcularArea();
@@ -35,5 +36,29 @@ public class Geometria {
 
         ObjRetangulo.validarRetanguloEspecial();
         ObjRetangulo2.validarRetanguloEspecial();
+
+        // instanciar circulo
+
+        Circulo ObjCirculo = new Circulo();
+
+        ObjCirculo.nome = "Circulo1";
+        ObjCirculo.raio = 10;
+        ObjCirculo.exibirInformacoes();
+        ObjCirculo.calcularDiametro();
+        ObjCirculo.calcularArea();
+        ObjCirculo.calcularPerimetro();
+
+
+        // Circulo 2
+
+        Circulo ObjCirculo2 = new Circulo();
+
+        ObjCirculo2.nome = "Circulo2";
+        ObjCirculo2.raio = 20;
+        ObjCirculo2.exibirInformacoes();
+        ObjCirculo2.calcularDiametro();
+        ObjCirculo2.calcularArea();
+        ObjCirculo2.calcularPerimetro();
+
     }
 }
