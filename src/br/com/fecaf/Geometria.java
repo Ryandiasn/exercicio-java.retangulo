@@ -2,6 +2,7 @@ package br.com.fecaf;
 
 import br.com.fecaf.model.Circulo;
 import br.com.fecaf.model.Retangulo;
+import br.com.fecaf.model.Triangulo;
 
 public class Geometria {
     public static void main(String[] args) {
@@ -59,6 +60,48 @@ public class Geometria {
         ObjCirculo2.calcularDiametro();
         ObjCirculo2.calcularArea();
         ObjCirculo2.calcularPerimetro();
+
+
+        // instanciar triangulo
+
+        Triangulo ObjTriangulo = new Triangulo();
+
+        ObjTriangulo.nome = "Triângulo1";
+        ObjTriangulo.base = 10;
+        ObjTriangulo.ladob = 5;
+        ObjTriangulo.ladoc = 4;
+        ObjTriangulo.altura = 0;
+
+        boolean validaTriangulo = ObjTriangulo.validarTriangulo();
+            if (validaTriangulo) {
+                ObjTriangulo.exibirInformacoes();
+                ObjTriangulo.calcularArea();
+                ObjTriangulo.calculoPerimetro();
+                ObjTriangulo.tipoTriangulo();
+                ObjTriangulo.verificaTrianguloRetangulo();
+
+            }
+
+
+        Triangulo ObjTriangulo2 = new Triangulo();
+
+        ObjTriangulo2.nome = "Triângulo2";
+        ObjTriangulo2.base = 10;
+        ObjTriangulo2.ladob = 10;
+        ObjTriangulo2.ladoc = 10;
+        ObjTriangulo2.altura = 7;
+
+        boolean validaTriangulo2 = ObjTriangulo2.validarTriangulo();
+            if (validaTriangulo2) {
+                ObjTriangulo2.exibirInformacoes();
+                ObjTriangulo2.calcularArea();
+                ObjTriangulo2.calculoPerimetro();
+                ObjTriangulo2.tipoTriangulo();
+                ObjTriangulo.verificaTrianguloRetangulo();
+
+            }
+
+
 
     }
 }
